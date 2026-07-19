@@ -1,0 +1,208 @@
+   <!DOCTYPE html>    <html lang="en" dir="ltr" class="scroll-smooth">    <head>      <meta charset="UTF-8" />      <meta name="viewport" content="width=device-width, initial-scale=1.0" />      <title>Nexora — Products</title>      <meta name="description" content="Nexora builds simple, powerful tools for modern teams. Discover NexoraCode, NexoraAnalytics, and NexoraShield." />      <script src="https://cdn.tailwindcss.com"></script>      <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet" />      <style>        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{font-family:'Inter',sans-serif}html[lang="ar"]{font-family:'Tajawal',sans-serif}body{background:#FFFFFF;color:#1a1a1a;overflow-x:hidden}::selection{background:rgba(220,38,38,0.15);color:#991b1b}.slider-track{display:flex;transition:transform .5s ease;direction:ltr}.slide{min-width:100%}.slider-dot{width:8px;height:8px;border-radius:50%;background:#d4d4d4;transition:all .3s ease;cursor:pointer}.slider-dot.active{background:#dc2626;width:24px;border-radius:4px}.fade-up{opacity:0;transform:translateY(20px);transition:all .6s ease}.fade-up.visible{opacity:1;transform:translateY(0)}#prevBtn{left:1rem;right:auto}#nextBtn{right:1rem;left:auto}html[dir="rtl"] #prevBtn{left:auto;right:1rem}html[dir="rtl"] #nextBtn{right:auto;left:1rem}
+      </style>
+    </head>
+    <body>
+      <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+          <a href="#" class="flex items-center gap-2" aria-label="Nexora Home">
+            <span class="iconify text-2xl text-red-600" data-icon="ph:diamond-fill"></span>
+            <span class="font-bold text-lg text-gray-900 tracking-tight">Nexora</span>
+          </a>
+          <div class="flex items-center gap-4">
+            <div class="hidden md:flex items-center gap-8">
+              <a href="#hero" class="nav-link text-sm text-gray-500 hover:text-red-600 transition-colors" data-en="Home" data-ar="الرئيسية">Home</a>
+              <a href="#products" class="nav-link text-sm text-gray-500 hover:text-red-600 transition-colors" data-en="Products" data-ar="المنتجات">Products</a>
+              <a href="#about" class="nav-link text-sm text-gray-500 hover:text-red-600 transition-colors" data-en="About" data-ar="من نحن">About</a>
+              <a href="#contact" class="nav-link text-sm text-gray-500 hover:text-red-600 transition-colors" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+            </div>
+            <button id="langToggle" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-200 hover:border-red-200 hover:bg-red-50 transition-all text-xs font-semibold text-gray-600 hover:text-red-600" aria-label="Toggle Language">
+              <span class="iconify text-sm" data-icon="ph:globe-bold"></span>
+              <span id="langLabel">العربية</span>
+            </button>
+            <button id="menuBtn" class="md:hidden text-gray-700" aria-label="Open Menu">
+              <span class="iconify text-2xl" data-icon="ph:list-bold"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div id="mobileMenu" class="fixed inset-0 z-[60] bg-white hidden flex-col">
+        <div class="flex items-center justify-between px-6 h-16 border-b border-gray-100">
+          <span class="font-bold text-lg text-gray-900">Nexora</span>
+          <button id="closeMenu" class="text-gray-700" aria-label="Close Menu"><span class="iconify text-2xl" data-icon="ph:x-bold"></span></button>
+        </div>
+        <div class="flex flex-col gap-1 p-6">
+          <a href="#hero" class="mobile-link nav-link py-3 text-lg text-gray-700 hover:text-red-600 transition-colors border-b border-gray-50" data-en="Home" data-ar="الرئيسية">Home</a>
+          <a href="#products" class="mobile-link nav-link py-3 text-lg text-gray-700 hover:text-red-600 transition-colors border-b border-gray-50" data-en="Products" data-ar="المنتجات">Products</a>
+          <a href="#about" class="mobile-link nav-link py-3 text-lg text-gray-700 hover:text-red-600 transition-colors border-b border-gray-50" data-en="About" data-ar="من نحن">About</a>
+          <a href="#contact" class="mobile-link nav-link py-3 text-lg text-gray-700 hover:text-red-600 transition-colors" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+        </div>
+      </div>
+      <main>
+        <section id="hero" class="pt-16">
+          <div class="relative overflow-hidden">
+            <div id="sliderTrack" class="slider-track">
+              <div class="slide">
+                <div class="relative h-[60vh] md:h-[75vh]">
+                  <img src="https://picsum.photos/seed/red-product1/1400/800.jpg" alt="NexoraCode Platform Interface" class="absolute inset-0 w-full h-full object-cover" />
+                  <div class="absolute inset-0 bg-black/40"></div>
+                  <div class="absolute inset-0 flex items-center justify-center text-center px-6">
+                    <div>
+                      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight trans-text" data-en="NexoraCode" data-ar="نيكسورا كود">NexoraCode</h1>
+                      <p class="text-white/80 text-lg md:text-xl max-w-lg mx-auto trans-text" data-en="Build faster with our intelligent development platform." data-ar="ابنِ أسرع باستخدام منصتنا الذكية للتطوير.">Build faster with our intelligent development platform.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="relative h-[60vh] md:h-[75vh]">
+                  <img src="https://picsum.photos/seed/red-product2/1400/800.jpg" alt="NexoraAnalytics Dashboard" class="absolute inset-0 w-full h-full object-cover" />
+                  <div class="absolute inset-0 bg-black/40"></div>
+                  <div class="absolute inset-0 flex items-center justify-center text-center px-6">
+                    <div>
+                      <p class="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight trans-text" data-en="NexoraAnalytics" data-ar="نيكسورا أناليتكس">NexoraAnalytics</p>
+                      <p class="text-white/80 text-lg md:text-xl max-w-lg mx-auto trans-text" data-en="Real-time data insights that drive smarter decisions." data-ar="رؤى بيانات فورية تدفع لقرارات أذكى.">Real-time data insights that drive smarter decisions.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="relative h-[60vh] md:h-[75vh]">
+                  <img src="https://picsum.photos/seed/red-product3/1400/800.jpg" alt="NexoraShield Security Stack" class="absolute inset-0 w-full h-full object-cover" />
+                  <div class="absolute inset-0 bg-black/40"></div>
+                  <div class="absolute inset-0 flex items-center justify-center text-center px-6">
+                    <div>
+                      <p class="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight trans-text" data-en="NexoraShield" data-ar="نيكسورا شيلد">NexoraShield</p>
+                      <p class="text-white/80 text-lg md:text-xl max-w-lg mx-auto trans-text" data-en="Enterprise-grade security for every layer of your stack." data-ar="أمان على مستوى المؤسسات لكل طبقة في بنيتك.">Enterprise-grade security for every layer of your stack.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button id="prevBtn" class="absolute top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 text-gray-800 flex items-center justify-center hover:bg-white shadow-md transition-colors" aria-label="Previous Slide">
+              <span class="iconify" data-icon="ph:arrow-left-bold"></span>
+            </button>
+            <button id="nextBtn" class="absolute top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 text-gray-800 flex items-center justify-center hover:bg-white shadow-md transition-colors" aria-label="Next Slide">
+              <span class="iconify" data-icon="ph:arrow-right-bold"></span>
+            </button>
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2">
+              <div class="slider-dot active" data-slide="0"></div>
+              <div class="slider-dot" data-slide="1"></div>
+              <div class="slider-dot" data-slide="2"></div>
+            </div>
+          </div>
+        </section>
+        <section id="products" class="py-20 md:py-28 bg-gray-50">
+          <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-14 fade-up">
+              <p class="text-red-600 text-sm font-semibold uppercase tracking-widest mb-2 trans-text" data-en="Our Products" data-ar="منتجاتنا">Our Products</p>
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight trans-text" data-en="What We Offer" data-ar="ما نقدمه">What We Offer</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+              <div class="fade-up bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-lg hover:border-red-100 transition-all group">
+                <div class="aspect-square overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/prod-code/500/500.jpg" alt="NexoraCode Software" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" /></div>
+                <div class="p-4"><h3 class="font-semibold text-gray-900 text-sm md:text-base trans-text" data-en="NexoraCode" data-ar="نيكسورا كود">NexoraCode</h3></div>
+              </div>
+              <div class="fade-up bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-lg hover:border-red-100 transition-all group" style="transition-delay:50ms">
+                <div class="aspect-square overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/prod-analytics/500/500.jpg" alt="NexoraAnalytics Software" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" /></div>
+                <div class="p-4"><h3 class="font-semibold text-gray-900 text-sm md:text-base trans-text" data-en="NexoraAnalytics" data-ar="نيكسورا أناليتكس">NexoraAnalytics</h3></div>
+              </div>
+              <div class="fade-up bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-lg hover:border-red-100 transition-all group" style="transition-delay:100ms">
+                <div class="aspect-square overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/prod-shield/500/500.jpg" alt="NexoraShield Software" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" /></div>
+                <div class="p-4"><h3 class="font-semibold text-gray-900 text-sm md:text-base trans-text" data-en="NexoraShield" data-ar="نيكسورا شيلد">NexoraShield</h3></div>
+              </div>
+              <div class="fade-up bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-lg hover:border-red-100 transition-all group" style="transition-delay:150ms">
+                <div class="aspect-square overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/prod-cloud/500/500.jpg" alt="NexoraCloud Solution" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" /></div>
+                <div class="p-4"><h3 class="font-semibold text-gray-900 text-sm md:text-base trans-text" data-en="NexoraCloud" data-ar="نيكسورا كلاود">NexoraCloud</h3></div>
+              </div>
+              <div class="fade-up bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-lg hover:border-red-100 transition-all group" style="transition-delay:200ms">
+                <div class="aspect-square overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/prod-flow/500/500.jpg" alt="NexoraFlow Automation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" /></div>
+                <div class="p-4"><h3 class="font-semibold text-gray-900 text-sm md:text-base trans-text" data-en="NexoraFlow" data-ar="نيكسورا فلو">NexoraFlow</h3></div>
+              </div>
+              <div class="fade-up bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-lg hover:border-red-100 transition-all group" style="transition-delay:250ms">
+                <div class="aspect-square overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/prod-pay/500/500.jpg" alt="NexoraPay Gateway" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" /></div>
+                <div class="p-4"><h3 class="font-semibold text-gray-900 text-sm md:text-base trans-text" data-en="NexoraPay" data-ar="نيكسورا باي">NexoraPay</h3></div>
+              </div>
+              <div class="fade-up bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-lg hover:border-red-100 transition-all group" style="transition-delay:300ms">
+                <div class="aspect-square overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/prod-chat/500/500.jpg" alt="NexoraChat Application" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" /></div>
+                <div class="p-4"><h3 class="font-semibold text-gray-900 text-sm md:text-base trans-text" data-en="NexoraChat" data-ar="نيكسورا شات">NexoraChat</h3></div>
+              </div>
+              <div class="fade-up bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-lg hover:border-red-100 transition-all group" style="transition-delay:350ms">
+                <div class="aspect-square overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/prod-iot/500/500.jpg" alt="NexoraIoT System" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" /></div>
+                <div class="p-4"><h3 class="font-semibold text-gray-900 text-sm md:text-base trans-text" data-en="NexoraIoT" data-ar="نيكسورا آي أو تي">NexoraIoT</h3></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about" class="py-20 md:py-28">
+          <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center fade-up">
+              <p class="text-red-600 text-sm font-semibold uppercase tracking-widest mb-2 trans-text" data-en="About Us" data-ar="من نحن">About Us</p>
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mb-6 trans-text" data-en="Simplicity Meets Power" data-ar="البساطة تلتقي بالقوة">Simplicity Meets Power</h2>
+              <p class="text-gray-500 leading-relaxed trans-text" data-en="Nexora builds straightforward tools that help teams work smarter. No bloat, no confusion — just clean software that does exactly what you need, reliably, every day." data-ar="نيكسورا تبني أدوات مباشرة تساعد الفرق على العمل بذكاء. بدون تعقيد، بدون ارتباك — مجرد برمجيات نظيفة تفعل بالضبط ما تحتاجه، بشكل موثوق، كل يوم.">Nexora builds straightforward tools that help teams work smarter. No bloat, no confusion — just clean software that does exactly what you need, reliably, every day.</p>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="py-20 md:py-28 bg-red-600">
+          <div class="max-w-6xl mx-auto px-6 text-center fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4 trans-text" data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch</h2>
+            <p class="text-red-100 mb-8 max-w-md mx-auto trans-text" data-en="Have a question or want to work with us? Drop us a line and we'll get back to you shortly." data-ar="لديك سؤال أو تريد العمل معنا؟ أرسل لنا وسنرد عليك قريباً.">Have a question or want to work with us? Drop us a line and we'll get back to you shortly.</p>
+            <form id="contactForm" class="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
+              <input type="email" id="emailInput" required class="flex-1 px-5 py-3 rounded-full bg-white/20 border border-white/30 text-white placeholder:text-red-200 text-sm focus:outline-none focus:border-white transition-colors trans-ph" data-en="Your email" data-ar="بريدك الإلكتروني" placeholder="Your email" aria-label="Email Address" />
+              <button type="submit" class="px-6 py-3 bg-white text-red-600 font-semibold text-sm rounded-full hover:bg-red-50 transition-colors trans-text" data-en="Send" data-ar="إرسال">Send</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="grid md:grid-cols-4 gap-10 mb-12">
+            <div class="md:col-span-2">
+              <div class="flex items-center gap-2 mb-4">
+                <span class="iconify text-2xl text-red-500" data-icon="ph:diamond-fill"></span>
+                <span class="font-bold text-lg tracking-tight">Nexora</span>
+              </div>
+              <p class="text-gray-400 text-sm leading-relaxed max-w-sm mb-6 trans-text" data-en="We build simple, powerful tools for modern teams. Our mission is to make software that anyone can use without a manual — intuitive by design, reliable by nature." data-ar="نبني أدوات بسيطة وقوية للفرق الحديثة. مهمتنا هي صنع برمجيات يمكن لأي شخص استخدامها بدون دليل — بديهية بالتصميم، موثوقة بالطبيعة.">We build simple, powerful tools for modern teams. Our mission is to make software that anyone can use without a manual — intuitive by design, reliable by nature.</p>
+              <div class="flex items-center gap-3">
+                <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 transition-colors" aria-label="X Profile"><span class="iconify text-sm" data-icon="ph:x-logo-bold"></span></a>
+                <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 transition-colors" aria-label="Github Profile"><span class="iconify text-sm" data-icon="ph:github-logo-bold"></span></a>
+                <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 transition-colors" aria-label="Linkedin Profile"><span class="iconify text-sm" data-icon="ph:linkedin-logo-bold"></span></a>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4 trans-text" data-en="Products" data-ar="المنتجات">Products</h4>
+              <ul class="space-y-2.5">
+                <li><a href="#" class="text-sm text-gray-500 hover:text-white transition-colors trans-text" data-en="NexoraCode" data-ar="نيكسورا كود">NexoraCode</a></li>
+                <li><a href="#" class="text-sm text-gray-500 hover:text-white transition-colors trans-text" data-en="NexoraAnalytics" data-ar="نيكسورا أناليتكس">NexoraAnalytics</a></li>
+                <li><a href="#" class="text-sm text-gray-500 hover:text-white transition-colors trans-text" data-en="NexoraShield" data-ar="نيكسورا شيلد">NexoraShield</a></li>
+                <li><a href="#" class="text-sm text-gray-500 hover:text-white transition-colors trans-text" data-en="NexoraCloud" data-ar="نيكسورا كلاود">NexoraCloud</a></li>
+                <li><a href="#" class="text-sm text-gray-500 hover:text-white transition-colors trans-text" data-en="NexoraFlow" data-ar="نيكسورا فلو">NexoraFlow</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4 trans-text" data-en="Company" data-ar="الشركة">Company</h4>
+              <ul class="space-y-2.5">
+                <li><a href="#" class="text-sm text-gray-500 hover:text-white transition-colors trans-text" data-en="About" data-ar="من نحن">About</a></li>
+                <li><a href="#" class="text-sm text-gray-500 hover:text-white transition-colors trans-text" data-en="Blog" data-ar="المدونة">Blog</a></li>
+                <li><a href="#" class="text-sm text-gray-500 hover:text-white transition-colors trans-text" data-en="Careers" data-ar="الوظائف">Careers</a></li>
+                <li><a href="#contact" class="text-sm text-gray-500 hover:text-white transition-colors trans-text" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-gray-600 text-xs tracking-wide trans-text" data-en="© 2025 NEXORA INC. ALL RIGHTS RESERVED." data-ar="© 2025 شركة نيكسورا. جميع الحقوق محفوظة.">© 2025 NEXORA INC. ALL RIGHTS RESERVED.</p>
+            <div class="flex items-center gap-6">
+              <a href="#" class="text-gray-600 hover:text-gray-400 text-xs tracking-wide transition-colors trans-text" data-en="PRIVACY" data-ar="الخصوصية">PRIVACY</a>
+              <a href="#" class="text-gray-600 hover:text-gray-400 text-xs tracking-wide transition-colors trans-text" data-en="TERMS" data-ar="الشروط">TERMS</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[70] flex items-center gap-2 px-5 py-3 rounded-full bg-gray-900 text-white text-sm shadow-xl transition-all duration-300 translate-y-20 opacity-0 pointer-events-none">
+        <span class="iconify text-green-400" data-icon="ph:check-circle-fill"></span>
+        <span id="toastMsg">Sent!</span>
+      </div>
+      <script>
+        let currentLang='en';function setLanguage(e){currentLang=e;const t=document.documentElement;t.setAttribute("dir","ar"===e?"rtl":"ltr"),t.setAttribute("lang",e),document.getElementById("langLabel").textContent="ar"===e?"English":"العربية",document.querySelectorAll(".trans-text").forEach(t=>{const n=t.getAttribute(`data-${e}`);n&&(t.textContent=n)}),document.querySelectorAll(".trans-ph").forEach(t=>{const n=t.getAttribute(`data-${e}`);n&&(t.placeholder=n)});const n=document.querySelector("#prevBtn .iconify"),r=document.querySelector("#nextBtn .iconify");"ar"===e?(n.setAttribute("data-icon","ph:arrow-right-bold"),r.setAttribute("data-icon","ph:arrow-left-bold")):(n.setAttribute("data-icon","ph:arrow-left-bold"),r.setAttribute("data-icon","ph:arrow-right-bold"))}document.getElementById("langToggle").addEventListener("click",()=>{setLanguage("en"===currentLang?"ar":"en")});const track=document.getElementById("sliderTrack"),dots=document.querySelectorAll(".slider-dot");let cur=0,total=3,timer;function go(e){cur=(e%total+total)%total,track.style.transform=`translateX(-${100*cur}%)`,dots.forEach((e,t)=>e.classList.toggle("active",t===cur))}function auto(){clearInterval(timer),timer=setInterval(()=>go(cur+1),4500)}dots.forEach(e=>e.addEventListener("click",()=>{go(+e.dataset.slide),auto()})),document.getElementById("prevBtn").addEventListener("click",()=>{go(cur-1),auto()}),document.getElementById("nextBtn").addEventListener("click",()=>{go(cur+1),auto()}),auto();const mm=document.getElementById("mobileMenu");document.getElementById("menuBtn").addEventListener("click",()=>{mm.classList.remove("hidden"),mm.classList.add("flex")}),document.getElementById("closeMenu").addEventListener("click",()=>{mm.classList.add("hidden"),mm.classList.remove("flex")}),document.querySelectorAll(".mobile-link").forEach(e=>e.addEventListener("click",()=>{mm.classList.add("hidden"),mm.classList.remove("flex")}));const obs=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&e.target.classList.add("visible")})},{threshold:.1});document.querySelectorAll(".fade-up").forEach(e=>obs.observe(e)),document.getElementById("contactForm").addEventListener("submit",e=>{e.preventDefault();const t=document.getElementById("toast");document.getElementById("toastMsg").textContent="ar"===currentLang?"شكراً! سنتواصل معك قريباً.":"Thanks! We'll be in touch.",t.classList.remove("translate-y-20","opacity-0","pointer-events-none"),setTimeout(()=>t.classList.add("translate-y-20","opacity-0","pointer-events-none"),3e3),document.getElementById("emailInput").value=""}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",t=>{const n=e.getAttribute("href");if("#"!==n){t.preventDefault();const e=document.querySelector(n);e&&e.scrollIntoView({behavior:"smooth",block:"start"})}})});
+      </script>
+    </body>
+    </html>
